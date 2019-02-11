@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f6f54af-9131-4c57-849d-8a1ea0ce8972" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/KafkaMessageStream.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/KafkaMessageProducer.class" afterPath="$PROJECT_DIR$/target/classes/KafkaMessageProducer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/TwitterClient.class" afterPath="$PROJECT_DIR$/target/classes/TwitterClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kafkaqueuemanagement.iml" afterPath="$PROJECT_DIR$/kafkaqueuemanagement.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/KafkaMessageProducer.java" afterPath="$PROJECT_DIR$/src/main/java/KafkaMessageProducer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/TwitterClient.java" afterPath="$PROJECT_DIR$/src/main/java/TwitterClient.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,9 +43,11 @@
       <file leaf-file-name="KafkaMessageStream.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/KafkaMessageStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-679">
-              <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="266">
+              <caret line="70" column="73" lean-forward="true" selection-start-line="70" selection-start-column="73" selection-end-line="70" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,7 +119,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="56" />
     <option name="y" value="51" />
     <option name="width" value="1440" />
@@ -365,7 +361,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="51" width="1440" height="783" extended-state="0" />
+    <frame x="56" y="51" width="1440" height="783" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -477,9 +473,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/KafkaMessageStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-679">
-          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="266">
+          <caret line="70" column="73" lean-forward="true" selection-start-line="70" selection-start-column="73" selection-end-line="70" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
