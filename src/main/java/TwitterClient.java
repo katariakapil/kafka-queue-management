@@ -9,6 +9,7 @@ import com.twitter.hbc.core.event.Event;
 import com.twitter.hbc.core.processor.StringDelimitedProcessor;
 import com.twitter.hbc.httpclient.auth.Authentication;
 import com.twitter.hbc.httpclient.auth.OAuth1;
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.util.List;
@@ -40,7 +41,7 @@ public class TwitterClient {
         StatusesFilterEndpoint hosebirdEndpoint = new StatusesFilterEndpoint();
 // Optional: set up some followings and track terms
       //  List<Long> followings = Lists.newArrayList(1234L, 566788L);
-        List<String> terms = Lists.newArrayList("kannukapiltweet");
+        List<String> terms = Lists.newArrayList("bitcoin");
      //   hosebirdEndpoint.followings(followings);
         hosebirdEndpoint.trackTerms(terms);
 
@@ -65,8 +66,15 @@ public class TwitterClient {
             //String msg = msgQueue.take();
             String msg = msgQueue.poll(5, TimeUnit.SECONDS);
 
-            System.out.println("MESSAGE FROM \n "+msg);
-            log.error("MSG "+msg);
+          //  System.out.println("MESSAGE FROM \n "+msg);
+
+
+            JSONObject obj = new JSONObject(msg);
+            String textMessage = obj.getString("text");
+            log.info("MSG "+textMessage);
+
+
+            KafkaMessageProducer.writeToTopic(textMessage);
 
         }
 

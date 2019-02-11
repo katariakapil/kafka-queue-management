@@ -8,10 +8,19 @@ import java.util.Properties;
 
 public class KafkaMessageProducer {
 
-    public static final String FIRST_TOPIC = "first_topic";
+    public static final String FIRST_TOPIC = "first_topic_kapil";
+    public static final String FIRST_TOPIC_PROCCESSED = "first_topic_kapil_converted";
 
     public static void main(String[] args) {
 
+
+        writeToTopic("Just for testing");
+
+
+
+    }
+
+    public static void writeToTopic(String msg) {
 
         String bootstrapServer = "localhost:9092";
 
@@ -25,7 +34,7 @@ public class KafkaMessageProducer {
 
         KafkaProducer<String,String> producer = new KafkaProducer<String, String>(properties);
 
-        ProducerRecord<String,String> record = new ProducerRecord<String, String>(FIRST_TOPIC,"Kapil test");
+        ProducerRecord<String,String> record = new ProducerRecord<String, String>(FIRST_TOPIC,msg);
 
         producer.send(record);
 
@@ -33,8 +42,5 @@ public class KafkaMessageProducer {
         //this will write to queue
         producer.flush();
         producer.close();
-
-
-
     }
 }
